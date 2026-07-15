@@ -1,8 +1,8 @@
 products:
   cli:
     build:
-      main-pkg: cli
-      version-var: main.version
+      main-pkg: .
+      version-var: ./cmd/root.Version
       os-archs:
         - os: darwin
           arch: arm64
