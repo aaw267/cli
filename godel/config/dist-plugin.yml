@@ -1,0 +1,8 @@
+products:
+  cli:
+    build:
+      main-pkg: cli
+      version-var: main.version
+      os-archs:
+        - os: darwin
+          arch: arm64

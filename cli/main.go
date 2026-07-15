@@ -7,6 +7,8 @@ import (
 	"github.com/spf13/cobra"
 )
 
+var version = "none"
+
 var (
 	uppercase bool
 	lowercase bool
@@ -24,7 +26,7 @@ You can provide text as arguments or pipe it in via stdin.
 Multiple formatting options can be applied simultaneously.`,
 	Args: cobra.ArbitraryArgs,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("hi!")
+		fmt.Println("hi!, version:", version)
 	},
 }
 
